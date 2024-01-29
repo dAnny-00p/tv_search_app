@@ -1,9 +1,14 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <nav className='navbar navbar-expand-lg bg-body-tertiary'>
+      <div className='container-fluid'>
+        <NavLink className='navbar-brand' to='/'>
+          TV Shows
+        </NavLink>
+      </div>
+    </nav>
   )
 }
-
 export default Header

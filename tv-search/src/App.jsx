@@ -1,19 +1,15 @@
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-import Search from './components/Search'
+import Header from './components/Header'
+import RoutesIndex from './routes/RoutesIndex'
 
-function App() {
-  
-
+function App () {
   return (
     <>
-    <Search/>
-
-    {/*<Header />    ... asi invoco a un componente*/}
-    <div className = "App">
-      <h2>Main component</h2>
-
-    </div>
-
+      <BrowserRouter>
+        <Header />
+        <RoutesIndex />
+      </BrowserRouter>
     </>
   )
 }

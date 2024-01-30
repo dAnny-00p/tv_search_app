@@ -1,5 +1,6 @@
 .container-fluid {
     background-color: #3a86ff;
+    align-items: start;
 }
 
 .navbar-brand {
@@ -7,3 +8,6 @@
     padding: 14px 16px;
 }
 
+.nav-link {
+    background-color: aqua;
+}

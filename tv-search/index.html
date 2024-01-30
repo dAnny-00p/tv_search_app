@@ -9,5 +9,41 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <h1>Buscador de shows de TV</h1>
+    <input type ="search" id ="search" placeholder="Ingrese su búsqueda">
+    <section id="shows" class="grid-fluid"></section>
+    <template id="show-template">
+      <article class="show">
+        <h3>        </h3>
+        <div></div>
+        <img>
+        <a></a>
+      </article>
+    </template>
+    <script>
+      const d = document,
+        $shows =d.getElementById("shows"),
+        $template =d.getElementById("show-template").content,
+        $fragment =d.createDocumentFragment("show-template");
+
+      d.addEventListener("keypress", async e => {
+        if(e.target.matches("#search")) {
+          if (e.key === "Enter") {
+            try {
+              $shows.innerHTML = '<img class="loader" src="../assets/loader.svg" alt="Cargando">';
+              let query = e.target.value.toLowerCase(),
+                api=' https://api.tvmaze.com/search/shows?q=${query}',
+                res= await fetch(api),
+                json = await res.json();
+              if (!res.ok) throw {status:res.status, statusText:res.statusText}
+            } catch(err) {
+              console.log(err);
+              let message = err.statusText || "Error";
+              $shows.innerHTML = '<p>Error ${err.status}:${message}</p>';
+            }
+          }
+        }
+      });
+    </script>
   </body>
 </html>

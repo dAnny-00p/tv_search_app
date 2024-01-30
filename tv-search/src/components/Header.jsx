@@ -1,14 +1,18 @@
+//rafce
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <nav className='navbar navbar-expand-lg bg-body-tertiary'>
-      <div className='container-fluid'>
+    <nav className='navbar'>
+      {/*<div className='container-fluid'>
         <NavLink className='navbar-brand' to='/'>
-          TV Shows
+          Tv Shows
         </NavLink>
-      </div>
+  </div>*/}
+      esto es la barra de navegacion
     </nav>
   )
 }
+
+
 export default Header

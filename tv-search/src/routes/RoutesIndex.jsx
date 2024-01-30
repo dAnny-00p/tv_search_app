@@ -8,8 +8,8 @@ const RoutesIndex = () => {
   return (
     <Routes>
       <Route path='/home' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/informacion' element={<Details />} />
+      <Route exact path='/about' element={<About />} />
+      <Route path='/informacion/:id' element={<Details />} />
       <Route path='*' element={<Error404 />} />
     </Routes>
   )

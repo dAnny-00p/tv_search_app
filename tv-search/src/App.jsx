@@ -14,13 +14,6 @@ function App () {
       <Router>
         <Header />
         <RoutesIndex />
-        {/*
-        <div className="container">
-          <Switch>
-            <Route exact path='/' Component={Home}/>
-            <Route path='/details/:id' Component={Details}/>
-          </Switch>
-        </div>*/}
       </Router>
     </>
   )

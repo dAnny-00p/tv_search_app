@@ -5,8 +5,12 @@ const Error404 = () => {
 
   return (
     <>
-      <h1>Error 404</h1>
-      <p>Página no encontrada: {location.pathname}</p>
+      <div className="errorPage">
+        <i className="fa-regular fa-face-sad-tear" />
+        <h1>Error 404</h1>
+        <p>Página no encontrada: {location.pathname}</p>
+      </div>
+      
     </>
 
   )

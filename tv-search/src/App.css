@@ -1,3 +1,15 @@
+/*pagina de error*/
+.errorPage {
+    margin: auto;
+    color: #ff006e;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.fa-regular {
+    padding: 15px;
+    font-size: 500%;
+}
 /*Barra de navegacion/header*/
 .navbar {
     padding: 14px 16px;

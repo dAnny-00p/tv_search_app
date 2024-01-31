@@ -1,19 +1,52 @@
+/*Barra de navegacion/header*/
 .navbar {
-    padding: 14px;
-    background: #3a86ff;
-}
-
-.navbar-brand {
-    background-color: #ffbe0b;
     padding: 14px 16px;
-    align-items: center;
+    background: linear-gradient(#023047, #3a86ff)
 }
 
-.container-fluid {
-    max-width: 1170px;
-    margin: auto;
+.navbar__brand a {
+    color: #e6e6e6;
+    border: 5px solid #ffbe0b;
+    padding: 3px 6px;
+    align-items: center;
+    text-decoration: none;
 }
+
+.navbar__brand a:hover {
+    color: #ffbe0b;
+}
+
 .navbar__nav {
     display: flex;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/*bara de busqueda*/
+/*.searchbar {
+    width: 50%;
+    margin: 15px 15px;
+    border-color: #023047;
+}
+
+.searchbar__form > input{
+    width: 100%;
+    padding: 10px 17px;
+    border: 2px #023047;
+}*/
+
+.d-flex {
+    width: 30%;
+    height: 5%;
+    margin: auto;
+    padding: 15px;
+}
+
+
+.homepage {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
 }

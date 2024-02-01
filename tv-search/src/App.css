@@ -36,19 +36,6 @@
     padding-top: 15px;
 }
 
-/*bara de busqueda*/
-/*.searchbar {
-    width: 50%;
-    margin: 15px 15px;
-    border-color: #023047;
-}
-
-.searchbar__form > input{
-    width: 100%;
-    padding: 10px 17px;
-    border: 2px #023047;
-}*/
-
 .d-flex {
     width: 30%;
     height: 5%;

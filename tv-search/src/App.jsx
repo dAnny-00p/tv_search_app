@@ -1,8 +1,5 @@
-import { BrowserRouter as Router} from 'react-router-dom'
-//import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import Header from './components/Header'
-//import Home from './pages/Home'
-//import Details from './pages/Details'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Header from './components/NavBar'
 import RoutesIndex from './routes/RoutesIndex'
 import './App.css'
 
@@ -11,7 +8,9 @@ function App () {
     <>
       <Router>
         <Header />
-        <RoutesIndex />
+        <div className='container'>
+          <RoutesIndex />
+        </div>
       </Router>
     </>
   )
